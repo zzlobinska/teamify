@@ -8,7 +8,6 @@
 	align-items: center;
 	font-weight: bold;
 
-
 	&::after {
 		content: '';
 		background-color: rgb(210, 210, 210);
@@ -28,7 +27,19 @@
 .logo {
 	font-size: 25px;
 	color: rgb(31, 29, 39);
-    font-weight: 900;
+	font-weight: 900;
+}
+
+.links {
+	@media (max-width: 1024px) {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+        top: -200px;
+        background-color: rgb(184, 207, 203);
+        transition: all .3s;
+	}
 }
 
 .link {
@@ -44,4 +55,20 @@
 
 .mobile {
 	display: none;
+	border: none;
+	padding: 30px;
+	background-color: rgb(184, 207, 203);
+    color: rgb(31, 29, 39);
+    &:hover {
+		color: black;
+		background-color: rgb(169, 203, 198);
+	}
+    
+	@media (max-width: 1024px) {
+		display: flex;
+	}
+}
+
+.active {
+    top: 90px;
 }

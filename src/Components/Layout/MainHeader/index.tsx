@@ -1,24 +1,36 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import styles from './MainHeader.module.scss';
+import { useState } from 'react';
+import classNames from 'classnames';
 
 const MainHeader = () => {
+	const [isMobileActive, setIsMobileActive] = useState(false);
+
+	const mobileMenuHandler = () => {
+		setIsMobileActive((prev) => !prev);
+	};
 	return (
 		<div className={styles.header}>
-			
-			<a href='/' className={styles.home}>
+			<Link to='/' className={styles.home}>
 				<p className={styles.logo}>Teamify</p>
-			</a>
-			<div className={styles.links}>
-				<a href='/' className={styles.link}>
+			</Link>
+			<div
+				className={classNames(styles.links, {
+					[styles.active]: isMobileActive,
+				})}
+			>
+				<Link to='/' className={styles.link}>
 					Start
-				</a>
-				<a href='about-us' className={styles.link}>
+				</Link>
+				<Link to='about-us' className={styles.link}>
 					About Us
-				</a>
+				</Link>
 			</div>
-			<button className={styles.mobile}>
-				<img src={styles.hamburger} alt='an iconf of a hamburger menu' />
+			<button onClick={mobileMenuHandler} className={styles.mobile}>
+				<FontAwesomeIcon icon={faBars} />
 			</button>
-			
 		</div>
 	);
 };
