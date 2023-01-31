@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import MainHeader from '../../Components/Layout/MainHeader';
+import Newsletter from '../../Components/Layout/Newsletter';
 import SearchSection from './SearchSection';
 import UsersList from './UsersListSection';
 
@@ -8,8 +9,9 @@ const AboutUsPage = () => {
 	return (
 		<>
 			<MainHeader />
-			<SearchSection state={whichUser} setState={setWhichUser}/>
-			<UsersList state={whichUser}/>
+			<SearchSection state={whichUser} setState={setWhichUser} />
+			<UsersList state={whichUser} />
+			<Newsletter />
 		</>
 	);
 };

@@ -12,11 +12,11 @@
 	z-index: 1;
 	width: 100%;
 	@media (max-width: 1300px) {
-        padding: 0 calc(50% - 450px);
-    }
+		padding: 0 calc(50% - 450px);
+	}
 	@media (max-width: 1024px) {
-        padding: 0 20px;
-    }
+		padding: 0 20px;
+	}
 
 	&::after {
 		content: '';
@@ -32,7 +32,6 @@
 		@media (max-width: 1024px) {
 			max-width: calc(100% - 40px);
 		}
-		
 	}
 }
 
@@ -53,9 +52,9 @@
 		flex-direction: column;
 		position: absolute;
 		right: 0;
-        top: -200px;
-        background-color: $bgc;
-        transition: all .3s;
+		top: -200px;
+		background-color: $bgc;
+		transition: all 0.3s;
 	}
 }
 
@@ -75,17 +74,17 @@
 	border: none;
 	padding: 30px;
 	background-color: $bgc;
-    color: $dark;
-    &:hover {
+	color: $dark;
+	&:hover {
 		color: black;
 		background-color: rgb(169, 203, 198);
 	}
-    
+
 	@media (max-width: 1024px) {
 		display: flex;
 	}
 }
 
 .active {
-    top: 90px;
+	top: 90px;
 }
