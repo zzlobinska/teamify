@@ -3,7 +3,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import './App.css';
 import RootLayout from './Components/Layout/RootLayout';
-import LandingPage from './LandingPage';
+import LandingPage from './Pages/LandingPage';
+
+import AboutUsPage from './Pages/AboutUsPage';
 
 const router = createBrowserRouter([
 	{
@@ -13,6 +15,7 @@ const router = createBrowserRouter([
 			{ path: '/', element: <LandingPage /> },
 			{
 				path: 'about-us',
+				element: <AboutUsPage/>,
 				children: [
 					{
 						path: ':details',

@@ -12,7 +12,7 @@ const MainHeader = () => {
 		setIsMobileActive((prev) => !prev);
 	};
 	return (
-		<div className={styles.header}>
+		<div className={classNames(styles.header, styles.grey)}>
 			<Link to='/' className={styles.home}>
 				<p className={styles.logo}>Teamify</p>
 			</Link>
