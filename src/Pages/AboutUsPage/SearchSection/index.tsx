@@ -1,12 +1,15 @@
-import { useState } from 'react';
 import Button from '../../../Components/UI/Button';
 import styles from './SearchSection.module.scss';
 
-const SearchSection = () => {
-	const [whichUser, setWhichUser] = useState<string>();
-
+const SearchSection = ({
+	state,
+	setState,
+}: {
+	state: string;
+	setState: (text: string) => void;
+}) => {
 	const searchHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-		setWhichUser(event.target.value);
+		setState(event.target.value);
 	};
 
 	return (
@@ -17,6 +20,7 @@ const SearchSection = () => {
 					placeholder='Search by Nickname'
 					className={styles.searchbar}
 					onChange={searchHandler}
+					value={state}
 				/>
 				<Button text='Search' />
 			</div>

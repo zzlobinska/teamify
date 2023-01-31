@@ -20,3 +20,9 @@
 		grid-template-columns: repeat(1, 1fr);
 	}
 }
+
+.not_found {
+	font-size: 30px;
+	text-align: center;
+	grid-column: 1 / 5;
+}
