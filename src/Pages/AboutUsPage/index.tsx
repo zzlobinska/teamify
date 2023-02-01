@@ -8,7 +8,7 @@ const AboutUsPage = () => {
 	const [whichUser, setWhichUser] = useState<string>('');
 	return (
 		<>
-			<MainHeader />
+			<MainHeader grey />
 			<SearchSection state={whichUser} setState={setWhichUser} />
 			<UsersList state={whichUser} />
 			<Newsletter />

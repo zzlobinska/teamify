@@ -6,23 +6,20 @@ import RootLayout from './Components/Layout/RootLayout';
 import LandingPage from './Pages/LandingPage';
 
 import AboutUsPage from './Pages/AboutUsPage';
+import DetailsPage from './Pages/DetailsPage';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <RootLayout />,
-		children: [
-			{ path: '/', element: <LandingPage /> },
-			{
-				path: 'about-us',
-				element: <AboutUsPage/>,
-				children: [
-					{
-						path: ':details',
-					},
-				],
-			},
-		],
+		element: <LandingPage />,
+	},
+	{
+		path: 'about-us/',
+		element: <AboutUsPage />,
+	},
+	{
+		path: 'about-us/details',
+		element: <DetailsPage />,
 	},
 ]);
 
