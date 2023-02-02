@@ -64,7 +64,7 @@ const UserDetails = () => {
 export default UserDetails;
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
-	console.log(params);
+	
 
 	try {
 		const response = await axios.get(
