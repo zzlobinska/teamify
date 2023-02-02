@@ -9,9 +9,20 @@
     cursor: pointer;
     font-weight: bold;
     transition: all .2s;
+
+    
+    &.dark:hover {
+        color: white;
+    }
     &:hover {
         background-color: transparent;
         color: $dark;
         
+    }
+
+    @media (max-width: 1024px) {
+        &.dark {
+            display: none;
+        }
     }
 }

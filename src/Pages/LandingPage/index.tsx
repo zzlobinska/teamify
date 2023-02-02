@@ -1,9 +1,12 @@
 import styles from './LandingPage.module.scss';
 import Flower from '../../Components/Img/Flower.png';
 import Button from '../../Components/UI/Button';
+import MainHeader from '../../Components/Layout/MainHeader';
 
 const LandingPage = () => {
 	return (
+		<>
+		<MainHeader/>
 		<div className={styles.landing}>
 			<div className={styles.content}>
 				<h1 className={styles.header}>
@@ -23,6 +26,7 @@ const LandingPage = () => {
 			</div>
 			<img className={styles.landing_img} alt='a yellow flower' src={Flower} />
 		</div>
+		</>
 	);
 };
 

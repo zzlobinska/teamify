@@ -1,0 +1,24 @@
+@use '../../../styles' as *;
+
+.box {
+    border: 1px solid #ddd;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 10px;
+	border-radius: 10px;
+	text-decoration: none;
+	width: 250px
+    
+}
+
+.title {
+    font-weight: bold;
+    color: $grey;
+    font-size: 22px;
+}
+
+.text {
+    color: $grey
+}

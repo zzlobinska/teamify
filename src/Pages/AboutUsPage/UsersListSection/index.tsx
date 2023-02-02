@@ -50,6 +50,7 @@ const UsersList = ({ state }: { state: string }) => {
 							name={user.firstName}
 							nickname={user.username}
 							key={user.id}
+							id={user.id}
 						/>
 					))
 				)}
@@ -61,3 +62,6 @@ const UsersList = ({ state }: { state: string }) => {
 	);
 };
 export default UsersList;
+
+
+

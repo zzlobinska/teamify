@@ -1,3 +1,5 @@
+@use '../../../styles' as *;
+
 .user {
 	border: 1px solid #ddd;
 	display: flex;
@@ -6,6 +8,7 @@
 	align-items: center;
 	padding: 50px 10px;
 	border-radius: 10px;
+	text-decoration: none;
 }
 
 .photo {
@@ -19,8 +22,8 @@
 .name {
 	font-size: 20px;
 	font-weight: bold;
-	color: #7c7c7c;
+	color: $grey;
 }
 .nickname {
-	color: #7c7c7c;
+	color: $grey;
 }
