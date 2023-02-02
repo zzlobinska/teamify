@@ -44,23 +44,20 @@ const UserInfo = () => {
 		},
 	];
 
-	const addressStyles = classNames(styles.btn, {
-		[styles.active]: isAddressActive,
-	});
-	const professionStyles = classNames(styles.btn, {
-		[styles.active]: !isAddressActive,
-	});
-
 	return (
 		<div className={styles.section}>
 			<div className={styles.switch}>
-				<button onClick={addressHandler} className={addressStyles}>
+				<button onClick={addressHandler} className={styles.btn}>
 					Address
 				</button>
-				<button onClick={professionHandler} className={professionStyles}>
+				<button onClick={professionHandler} className={styles.btn}>
 					Proffession
 				</button>
-				<span className={classNames(styles.grey, {[styles.active] : !isAddressActive})}/>
+				<span
+					className={classNames(styles.grey, {
+						[styles.active]: !isAddressActive,
+					})}
+				/>
 			</div>
 			{isAddressActive && (
 				<div className={styles.address}>
