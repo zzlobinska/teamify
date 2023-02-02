@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/teamify/static/css/main.a33cc918.css",
-    "main.js": "/teamify/static/js/main.feecdf49.js",
+    "main.js": "/teamify/static/js/main.9f550eaa.js",
     "static/js/787.de905a5d.chunk.js": "/teamify/static/js/787.de905a5d.chunk.js",
     "static/media/Flower.png": "/teamify/static/media/Flower.8e2d6f1a3a627c3a5435.png",
     "index.html": "/teamify/index.html",
     "main.a33cc918.css.map": "/teamify/static/css/main.a33cc918.css.map",
-    "main.feecdf49.js.map": "/teamify/static/js/main.feecdf49.js.map",
+    "main.9f550eaa.js.map": "/teamify/static/js/main.9f550eaa.js.map",
     "787.de905a5d.chunk.js.map": "/teamify/static/js/787.de905a5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a33cc918.css",
-    "static/js/main.feecdf49.js"
+    "static/js/main.9f550eaa.js"
   ]
 }
