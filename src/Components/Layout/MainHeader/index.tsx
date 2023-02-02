@@ -10,12 +10,17 @@ type HeaderProps = {
 	dark?: boolean;
 };
 
+
 const MainHeader = ({ grey, dark }: HeaderProps) => {
 	const [isMobileActive, setIsMobileActive] = useState(false);
-
+	
 	const mobileMenuHandler = () => {
 		setIsMobileActive((prev) => !prev);
 	};
+	const linkClasses = classNames(styles.link, {
+		[styles.grey]: grey,
+		[styles.dark]: dark,
+	});
 	return (
 		<div
 			className={classNames(styles.header, {
@@ -32,20 +37,11 @@ const MainHeader = ({ grey, dark }: HeaderProps) => {
 			>
 				<Link
 					to='/'
-					className={classNames(styles.link, {
-						[styles.grey]: grey,
-						[styles.dark]: dark,
-					})}
+					className={linkClasses}
 				>
 					Start
 				</Link>
-				<Link
-					to='/about-us'
-					className={classNames(styles.link, {
-						[styles.grey]: grey,
-						[styles.dark]: dark,
-					})}
-				>
+				<Link to='/about-us' className={linkClasses}>
 					About Us
 				</Link>
 			</div>

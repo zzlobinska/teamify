@@ -1,12 +1,10 @@
 import Button from '../../UI/Button';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import * as EmailValidator from 'email-validator';
 import styles from './Newsletter.module.scss';
 import { useState } from 'react';
 
 const Newsletter = () => {
-	// const [isValid, setIsValid] = useState<boolean>(true);
 	const [emailValue, setEmailValue] = useState<string>('');
 	const [isEmailSend, setIsEmailSend] = useState<boolean>(false);
 	const [error, setError] = useState<boolean>(false);
@@ -18,7 +16,6 @@ const Newsletter = () => {
 			return;
 		}
 		setError(false);
-		console.log(emailValue);
 		setEmailValue('');
 		setIsEmailSend(true);
 		setTimeout(() => setIsEmailSend(false), 2500);

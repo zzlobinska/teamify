@@ -23,7 +23,6 @@ type UserType = {
 
 const UserDetails = () => {
 	const userData: any = useLoaderData();
-	console.log('userData', userData);
 
 	const navigate = useNavigate();
 
@@ -48,7 +47,9 @@ const UserDetails = () => {
 							</div>
 							<div className={styles.followers}>
 								<BsFileEarmarkPersonFill color='white' />
-								<p className={styles.text}>Followers {userData.weight.toFixed(0)}</p>
+								<p className={styles.text}>
+									Followers {userData.weight.toFixed(0)}
+								</p>
 							</div>
 						</div>
 					</div>
@@ -64,13 +65,13 @@ const UserDetails = () => {
 export default UserDetails;
 
 export const loader = async ({ params }: LoaderFunctionArgs) => {
-	
-
 	try {
 		const response = await axios.get(
 			`https://dummyjson.com/users/${params.userId}`
 		);
 		const data: UserType = response.data;
 		return data;
-	} catch {}
+	} catch (error) {
+		console.error(error);
+	}
 };

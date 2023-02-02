@@ -6,7 +6,6 @@ import {loader as userDetailLoader} from './Pages/DetailsPage/UserDetails/index'
 import './App.css';
 
 import LandingPage from './Pages/LandingPage';
-
 import AboutUsPage from './Pages/AboutUsPage';
 import DetailsPage from './Pages/DetailsPage';
 
