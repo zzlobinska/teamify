@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.a33cc918.css",
-    "main.js": "/react-gh-pages/static/js/main.bc2e4cdf.js",
-    "static/js/787.de905a5d.chunk.js": "/react-gh-pages/static/js/787.de905a5d.chunk.js",
-    "static/media/Flower.png": "/react-gh-pages/static/media/Flower.8e2d6f1a3a627c3a5435.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.a33cc918.css.map": "/react-gh-pages/static/css/main.a33cc918.css.map",
-    "main.bc2e4cdf.js.map": "/react-gh-pages/static/js/main.bc2e4cdf.js.map",
-    "787.de905a5d.chunk.js.map": "/react-gh-pages/static/js/787.de905a5d.chunk.js.map"
+    "main.css": "/teamify/static/css/main.a33cc918.css",
+    "main.js": "/teamify/static/js/main.6ed011ff.js",
+    "static/js/787.de905a5d.chunk.js": "/teamify/static/js/787.de905a5d.chunk.js",
+    "static/media/Flower.png": "/teamify/static/media/Flower.8e2d6f1a3a627c3a5435.png",
+    "index.html": "/teamify/index.html",
+    "main.a33cc918.css.map": "/teamify/static/css/main.a33cc918.css.map",
+    "main.6ed011ff.js.map": "/teamify/static/js/main.6ed011ff.js.map",
+    "787.de905a5d.chunk.js.map": "/teamify/static/js/787.de905a5d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a33cc918.css",
-    "static/js/main.bc2e4cdf.js"
+    "static/js/main.6ed011ff.js"
   ]
 }
