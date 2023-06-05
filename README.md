@@ -1,8 +1,8 @@
 # TEAMIFY
 
-Projekt do wyszukiwania pracowników do Twojego zespołu!
+A project for searching employees to your team!
 
-Aby wystartować projekt:
+To run the project:
 
 ### `npm start`
 
